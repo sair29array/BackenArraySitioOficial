@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+.cuenta{
+	font-family: 'Montserrat', sans-serif; 
+	background: #FFFFFF;
+}
+.user-name{
+	background: #FAFAFA;
+	border-bottom: solid 2px #eeeeee;
+	padding: 10px;
+}
+.bloque{
+    display: inline;
+}

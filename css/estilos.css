@@ -1,0 +1,581 @@
+@charset "UTF-8";
+/*estilos globales*/
+html,
+body,
+main {
+  background: #FFFFFF;
+  font-family: Poppins; }
+
+/*estilos nav-header*/
+.view {
+  background: url("../img/banner-1.png") no-repeat center fixed;
+  background-size: cover; }
+
+.navbar {
+  background-color: #1e1f20;
+  font-size: 18px;
+  text-transform: uppercase; }
+
+.navbar a:hover {
+  color: #42a5f5; }
+
+.navbar a {
+  color: #FFFFFF; }
+
+.navbar-toggler {
+  color: white; }
+
+.scrolling-navbar {
+  -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+  -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+  -o-transition: background .5s ease-in-out, padding .5s ease-in-out;
+  transition: background .5s ease-in-out, padding .5s ease-in-out; }
+
+.top-nav-collapse {
+  background-image: url("../img/img-nav.jpg");
+  border-bottom: 2.5px solid #141922; }
+
+.welcome {
+  margin-top: 70px; }
+
+.linea-bottom {
+  color: #0277bd !important;
+  border-bottom: 3px solid #0277bd; }
+
+.title-view-desktop {
+  font-size: 70px; }
+
+.title-view-mobile {
+  font-size: 34px; }
+
+.img-logo {
+  max-width: 200px;
+  max-height: 70px; }
+
+/* estilos section somos-tic */
+.somos-tic {
+  background: #e8eaf6; }
+
+.img-somos {
+  -ms-flex-line-pack: center;
+  align-content: center;
+  width: 100%;
+  height: 100%; }
+
+.tarjeta {
+  font-size: 16px; }
+
+#fa-somos {
+  color: #FF9800; }
+
+.title-somos {
+  color: #3a3a50;
+  font-size: 55px;
+  font-weight: 900; }
+
+.img-cohete {
+  max-width: 380px; }
+
+/*mapa somos*/
+.tierra {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  border-radius: 50%;
+  -webkit-box-shadow: -30px -30px 0 -10px rgba(0, 0, 0, 0.15) inset, -60px -20px 0 0 rgba(0, 0, 0, 0.1) inset, 5px 5px 0 0 rgba(255, 255, 255, 0.2);
+  box-shadow: -30px -30px 0 -10px rgba(0, 0, 0, 0.15) inset, -60px -20px 0 0 rgba(0, 0, 0, 0.1) inset, 5px 5px 0 0 rgba(255, 255, 255, 0.2);
+  background: url(../img/mapa.png);
+  background-size: cover;
+  -webkit-animation: tierra-girando 15s infinite linear;
+  -moz-animation: tierra-girando 15s infinite linear;
+  -o-animation: tierra-girando 15s infinite linear; }
+
+@-webkit-keyframes tierra-girando {
+  0% {
+    background-position: 0 center; }
+  100% {
+    background-position: -796px center; } }
+
+@keyframes tierra-girando {
+  0% {
+    background-position: 0 center; }
+  100% {
+    background-position: -796px center; } }
+
+/*estilos boton ir arriba*/
+.ir-arriba {
+  display: none;
+  padding: 15px;
+  background: #ff3a5f;
+  color: #FFFFFF;
+  font-size: 20px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 25px;
+  right: 20px;
+  z-index: 2;
+  border-radius: 25em; }
+
+.ir-arriba:hover {
+  background: #00BCD4; }
+
+/*botones gradientes*/
+.boton1 {
+  background: #3a3a50;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 375rem 75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 25rem; }
+
+.boton1:hover {
+  background: #00BCD4; }
+
+.boton2 {
+  background: #ff3a5f;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 375rem 75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 25rem; }
+
+.boton2:hover {
+  background: #3a3a50; }
+
+.boton-c {
+  background: -webkit-linear-gradient(60deg, #3a3a50, #00BCD4);
+  background: -o-linear-gradient(60deg, #3a3a50, #00BCD4);
+  background: linear-gradient(30deg, #3a3a50, #00BCD4);
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 375rem 75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 25rem; }
+
+.boton-c:hover {
+  background: -webkit-linear-gradient(60deg, #00BCD4, #ff3a5f);
+  background: -o-linear-gradient(60deg, #00BCD4, #ff3a5f);
+  background: linear-gradient(30deg, #00BCD4, #ff3a5f); }
+
+/* estilos loader page */
+#contenedor {
+  background: #FFFFFF;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  z-index: 10000; }
+
+#cargar {
+  border: 8px solid #eeeeee;
+  border-top-color: #f43458;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-animation: girar 0.3s linear infinite;
+  animation: girar 0.3s linear infinite; }
+
+@-webkit-keyframes girar {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes girar {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+/*section herramientas*/
+.herramientas {
+  background: url("https://www.basicum.es/wp-content/uploads/2013/10/desarrollo-web-1210x423.jpg") fixed;
+  background-size: cover; }
+
+.herramientas .title-h {
+  font-weight: 900;
+  font-style: normal;
+  font-size: 35px;
+  line-height: 1;
+  letter-spacing: 0px;
+  color: #ff3a5f; }
+
+/* section metodologia de trabajo */
+.m-trabajo {
+  background: #e8eaf6;
+  font-weight: 600;
+  color: #3a3a50; }
+
+.m-trabajo img {
+  max-height: 100px; }
+
+.m-trabajo .card {
+  background: #f5f5f5; }
+
+.m-trabajo p, h4 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1; }
+
+.img-metodologia {
+  max-height: 60px; }
+
+/* section redes-sociales*/
+.redes-sociales {
+  background: #00BCD4;
+  color: #FFFFFF; }
+
+.redes-sociales .title-rds {
+  font-weight: 900;
+  font-style: normal;
+  font-size: 33px;
+  line-height: 1;
+  letter-spacing: 0px; }
+
+/* Footer */
+footer {
+  background: #263238;
+  position: relative; }
+
+footer hr {
+  background: #00b2f4;
+  border: 0;
+  height: 5px; }
+
+footer a:hover {
+  color: #00b2f4; }
+
+.texto-secundario {
+  color: #00b2f4; }
+
+/* estilos iniciar sesion y crear cuenta*/
+.iniciar-sesion {
+  margin-top: 80px !important;
+  background: #FFFFFF;
+  color: #000000; }
+
+.iniciar-sesion a {
+  color: #000000; }
+
+.iniciar-sesion a:hover {
+  color: grey; }
+
+.bloque {
+  display: inline-block; }
+
+.fa-check {
+  color: blue; }
+
+.v {
+  width: 2px;
+  height: 410px;
+  color: red;
+  background: #00b2f4; }
+
+/*fin crear cuenta*/
+/* quienes somos*/
+.team-about, .team {
+  background: #FFFFFF;
+  margin-top: 100px !important; }
+
+.team {
+  background: #1b8098;
+  color: #FFFFFF; }
+
+.boton3 {
+  background: -webkit-linear-gradient(70deg, #f43458, #00b2f4);
+  background: -o-linear-gradient(70deg, #f43458, #00b2f4);
+  background: linear-gradient(20deg, #f43458, #00b2f4);
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 375rem 75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 25rem; }
+
+.boton3:hover {
+  background: -webkit-linear-gradient(70deg, #00b2f4, #f43458);
+  background: -o-linear-gradient(70deg, #00b2f4, #f43458);
+  background: linear-gradient(20deg, #00b2f4, #f43458); }
+
+.img-team {
+  max-width: 150px;
+  max-height: 200px;
+  border-radius: 50%;
+  border: 3px solid  #FFFFFF; }
+
+/*estilos serivicios*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.servicios {
+  margin-top: 70px !important;
+  background: url("../img/servicios.jpg") no-repeat center fixed;
+  background-size: cover; }
+
+.tarjeta-wrap {
+  margin: 10px;
+  -webkit-perspective: 800;
+  perspective: 800; }
+
+.tarjeta {
+  width: 330px;
+  height: 260px;
+  background: #ffffff;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+  -webkit-box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+  box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+  border-radius: 2%; }
+
+.adelante, .atras {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding: 15px;
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  color: #FFFFFF;
+  display: block; }
+
+.adelante {
+  width: 100%; }
+
+.atras {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  display: -webkit-block;
+  display: -webkit-block;
+  display: -ms-block;
+  display: block;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 2%;
+  text-align: center;
+  color: #fff;
+  background: #f43458; }
+
+.tarjeta-wrap:hover .tarjeta {
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotatey(180deg);
+  transform: rotatey(180deg); }
+
+.boton3 {
+  background: -webkit-linear-gradient(70deg, #33b5e5, #00C851);
+  background: -o-linear-gradient(70deg, #33b5e5, #00C851);
+  background: linear-gradient(20deg, #33b5e5, #00C851);
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 375rem 75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 25rem; }
+
+.boton3:hover {
+  background: -webkit-linear-gradient(70deg, #00C851, #33b5e5);
+  background: -o-linear-gradient(70deg, #00C851, #33b5e5);
+  background: linear-gradient(20deg, #00C851, #33b5e5); }
+
+/*mi cuenta*/
+.cuenta {
+  background: #FFFFFF;
+  margin-top: 100px !important; }
+
+.user-name {
+  background: #FAFAFA;
+  border-bottom: solid 2px #eeeeee;
+  padding: 10px; }
+
+/*section lineas de accion*/
+.lineas {
+  background: #3a3a50; }
+
+.lineas-items {
+  background: #00BCD4; }
+
+.bloque {
+  display: inline; }
+
+.linea-img {
+  max-width: 300px; }
+
+/* estilos diseño web*/
+.diseño-web {
+  background: #e8eaf6;
+  margin-top: 100px !important;
+  font-family: Montserrat; }
+
+.banner-title {
+  font-size: 55px;
+  color: #3a3a50;
+  font-weight: 600; }
+
+.banner-txt {
+  color: #3a3a50; }
+
+/*tarjetas planes*/
+.planes .card {
+  background: #FFFFFF;
+  border: 0;
+  width: auto;
+  height: auto;
+  position: relative;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1);
+  -o-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+  transform: scale(1);
+  border-radius: 2%; }
+
+.planes .card:hover {
+  -webkit-box-shadow: 0px 0px 20px grey;
+  box-shadow: 0px 0px 20px grey;
+  z-index: 2;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1.5);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1.5);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1.5);
+  -o-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1); }
+
+/*portafolio*/
+.portafolio {
+  margin-top: 70px !important;
+  background: #e8eaf6; }
+
+.portafolio .card {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-left: 5px;
+  margin-right: 8px; }
+
+.portafolio .card:hover {
+  -webkit-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1); }
+
+.portafolio .card-header {
+  background-size: cover;
+  height: 140px;
+  width: auto; }
+
+.portafolio .card-title {
+  font-size: 23px;
+  /*nombre de las tarjetas*/ }
+
+.libertad {
+  background: url("../img/libertad.png"); }
+
+.rentacards4u {
+  background: url("../img/rentcars.png"); }
+
+.darkclub {
+  background: url("../img/dark-club.png"); }
+
+.complices {
+  background: url("../img/complices.png"); }
+
+.donde-aquellos {
+  background: url("../img/donde-aquellos.png"); }
+
+.mobiliarios {
+  background: url("../img/mobiliarios-farmasa.png"); }
+
+.proinsumos {
+  background: url("../img/proinsumos.png"); }
+
+.historias-no-contadas {
+  background: url("../img/historias-no-contadas.png"); }
+
+.hotel-klary {
+  background: url("../img/hotel-klary.png"); }
+
+/*titulo de cada card del portafolio*/
+.title-portafolio {
+  color: #ff3a5f;
+  font-weight: 600; }
+
+/*# sourceMappingURL=estilos.css.map */
